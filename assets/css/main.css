@@ -2168,7 +2168,8 @@
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.25);
+				/* background-color: rgba(144, 144, 144, 0.25); */
+                background:  rgba(46, 56, 66, 0);
 			}
 
 		table td {
@@ -2527,43 +2528,42 @@
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(7) {
-			background-color: rgba(0, 0, 0, 0.525);
+			background: rgba(46, 56, 66, 0);
 		}
 
-		.spotlight:nth-child(8) {
-			background-color: rgba(0, 0, 0, 0.6);
+		.spotlight:nth-child(8) {background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(9) {
-			background-color: rgba(0, 0, 0, 0.675);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.spotlight:nth-child(10) {
-			background-color: rgba(0, 0, 0, 0.75);
+			background: rgba(46, 56, 66, 0);
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2641,10 +2641,14 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			/*
+            background-color: #21b2a6;
 			color: #c7ebe8;
             background-image: url(/images/pic02.jpg);
             background-size: cover;
+            */
+            
+            background: rgba(46, 56, 66, 0);
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2777,7 +2781,8 @@
 				.wrapper.style1 input[type="button"]:hover,
 				.wrapper.style1 button:hover,
 				.wrapper.style1 .button:hover {
-					background-color: rgba(255, 255, 255, 0.075);
+					 /* background-color: rgba(255, 255, 255, 0.075); */
+                    background: rgba(46, 56, 66, 0);
 				}
 
 				.wrapper.style1 input[type="submit"]:active,
@@ -2785,7 +2790,7 @@
 				.wrapper.style1 input[type="button"]:active,
 				.wrapper.style1 button:active,
 				.wrapper.style1 .button:active {
-					background-color: rgba(255, 255, 255, 0.2);
+					background: rgba(46, 56, 66, 0);
 				}
 
 			@media screen and (max-width: 736px) {
@@ -2797,11 +2802,11 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background: rgba(46, 56, 66, 0);
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background: rgba(46, 56, 66, 0);
 			color: #d3d4e4;
 		}
 
@@ -3781,14 +3786,17 @@
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		/*
+        background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+        */
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+        background: -webkit-linear-gradient(top,  rgb(0, 0, 0) 10%,rgba(245,245,245,1) 100%);
 		padding-top: 0;
 	}
 
