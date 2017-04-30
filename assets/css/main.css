@@ -18,6 +18,10 @@
 		vertical-align: baseline;
 	}
 
+Vid1 {
+    
+}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2641,8 +2645,12 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c7ebe8;
+			/*
+               background-color: #21b2a6;
+            */
+            background-image: url(/images/banner1.jpg);
+            background-size: cover;
+		    
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
