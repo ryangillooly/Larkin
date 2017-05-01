@@ -15,7 +15,7 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline;
+		vertical-align: baseline;        
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2628,8 +2628,10 @@ margin-top: -15%;
 .calendar iframe {
     position: relative;
     height: 500px;
-    width: 1000px;
+    width: 95.1em;
 }
+
+
 
 	.wrapper {
 		padding: 6em 0 4em 0 ;
