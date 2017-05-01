@@ -2613,6 +2613,17 @@
 
 
 
+.calendar iframe {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    right: -25%
+}
+
+.wrapper > .inner > .major{
+    text-align: center;
+}
+
 	.wrapper {
 		padding: 6em 0 4em 0 ;
 	}
