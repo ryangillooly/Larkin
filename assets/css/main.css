@@ -2497,6 +2497,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+        margin-top: ;
 	}
 
 		.spotlight .image {
@@ -2619,7 +2620,8 @@ position:relative;
 width:100%; /* your iframe width */
 height:500px; /* your iframe height */
 top:500px; /* your iframe height */
-margin-top:-500px; /* your iframe height */
+/* margin-top:-500px; /* your iframe height */
+margin-top: -15%;
 }
 
 
@@ -2627,10 +2629,6 @@ margin-top:-500px; /* your iframe height */
     position: relative;
     height: 500px;
     width: 1000px;
-}
-
-.wrapper > .inner > .major{
-    
 }
 
 	.wrapper {
@@ -3753,6 +3751,8 @@ margin-top:-500px; /* your iframe height */
 				#footer .icons a:hover {
 					color: #fff;
 				}
+
+
 
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
