@@ -13,9 +13,32 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
 	</head>
 	<body class="landing">
-
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function()
+                {
+                    $(".owl-carousel").owlCarousel({
+                        margin: 10,
+                        stagePadding: 20,
+                        responsive: {
+                            0: {
+                                items:1
+                            },
+                            768: {
+                                items:2
+                            },
+                            970: {
+                                items:3
+                            }
+                        }
+                    });
+                });
+            </script>
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
@@ -96,35 +119,70 @@
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
 								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
 							</header>
-							<ul class="features">
+							<!--
+                            <ul class="features">
 								<li class="icon fa-paper-plane-o">
 									<h3>Devizes Town Centre</h3>
-                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShoutOutDevizes%2Fvideos%2F1012698502194820%2F&show_text=0&width=400" width="400" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShoutOutDevizes%2Fvideos%2F1012698502194820%2F&show_text=0&width=400" width="600" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 								</li>
 								<li class="icon fa-laptop">
 									<h3>Chasing Cars - Cover</h3>
-                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flarkinbanduk%2Fvideos%2F297374600694551%2F&show_text=0&width=560" width="400" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flarkinbanduk%2Fvideos%2F297374600694551%2F&show_text=0&width=400" width="600" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-headphones">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart-o">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
+                            </ul>
+                            -->
+                          <div class="owl-carousel">
+                          <div>
+                              <iframe 
+                                   src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShoutOutDevizes%2Fvideos%2F1012698502194820%2F&show_text=0&width=400" 
+                                   width="400" 
+                                   height="720" 
+                                   style="border:none;overflow:hidden" 
+                                   scrolling="no" 
+                                   frameborder="0" 
+                                   allowTransparency="true" 
+                                   allowFullScreen="true">
+                               </iframe>
+                          </div>
+                          <div>
+                              <iframe 
+                                   src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flarkinbanduk%2Fvideos%2F302824306816247%2F&show_text=0&width=400" 
+                                   width="400" 
+                                   height="720" 
+                                   style="border:none;overflow:hidden" 
+                                   scrolling="no" 
+                                   frameborder="0" 
+                                   allowTransparency="true" 
+                                   allowFullScreen="true">
+                               </iframe>
+                          </div>
+                          <div>
+                              <iframe 
+                                   src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShoutOutDevizes%2Fvideos%2F1012698502194820%2F&show_text=0&width=400" 
+                                   width="400" 
+                                   height="720" 
+                                   style="border:none;overflow:hidden" 
+                                   scrolling="no" 
+                                   frameborder="0" 
+                                   allowTransparency="true" 
+                                   allowFullScreen="true">
+                               </iframe>
+                          </div>
+                          <div>
+                              <iframe 
+                                   src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShoutOutDevizes%2Fvideos%2F1012698502194820%2F&show_text=0&width=400" 
+                                   width="400" 
+                                   height="720" 
+                                   style="border:none;overflow:hidden" 
+                                   scrolling="no" 
+                                   frameborder="0" 
+                                   allowTransparency="true" 
+                                   allowFullScreen="true">
+                               </iframe>
+                          </div>
+                        </div>
+				      </div>
 					</section>
-
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
@@ -155,9 +213,8 @@
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
+		<!-- Scripts -->	
+            <script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
