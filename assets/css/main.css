@@ -1949,6 +1949,10 @@
 		position: relative;
 	}
 
+.   .imgoverlay:hover {
+        opacity: 0.5;
+    }
+
 		.image img {
 			border-radius: 3px;
 			display: block;
@@ -2519,7 +2523,15 @@
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+                transition: opacity .35s ease-in-out;
+                -moz-transition: opacity .35s ease-in-out;
+                -webkit-transition: opacity .35s ease-in-out;
 			}
+/* SAM FINLEY HOVER */
+			.spotlight .image img:hover {
+                opacity: 0.3;
+                
+}
 
 		.spotlight .content {
 			padding: 2em 4em 0.1em 4em ;
@@ -3631,11 +3643,17 @@ top:500px;
 			order: 1;
 			padding-right: 3em;
 			width: 70%;
+            color: black;
+            
 		}
 
 			#cta .inner header p {
 				color: inherit;
 			}
+
+#cta .inner header h2 {
+    color: black;
+}
 
 		#cta .inner .actions {
 			-moz-order: 2;
@@ -3865,7 +3883,7 @@ top:500px;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-        padding-top: 0;
+       /* padding-top: 0; */
 	}
 
 	body.is-mobile.landing #footer {

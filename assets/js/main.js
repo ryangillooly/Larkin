@@ -129,21 +129,25 @@ $('.slick-carousel').slick({
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
         centerMode: true,
         centerPadding: '0',
         slidesToShow: 3,
-        variableWidth: true
+        variableWidth: true,
+        variable_height: true,
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrow.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrow.png'>"
       }
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
         centerMode: true,
         centerPadding: '0',
         slidesToShow: 1,
-        variableWidth: true
+        variableWidth: true,
+        variable_height: true,
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrow.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrow.png'>"
       }
     }
   ]
