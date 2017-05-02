@@ -99,6 +99,54 @@
 
 })(jQuery);
 
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+$(document).ready(function(){              
+    window.onload=function() {location.href='#';};
+/*
+    $(".owl-carousel").owlCarousel({
+        margin: 10,
+        stagePadding: 20,
+        responsive: 
+        {
+            0:   {items:1},
+            768: {items:2},
+            970: {items:3}
+        }
+    }); 
+*/
+    
+$('.slick-carousel').slick({
+  infinite: true,
+  speed: 300,
+  variable_height: true,
+  centerPadding: '0',
+  variableWidth: true,
+  slidesToShow: 3,
+  prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrow.png'>",
+  nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrow.png'>",
+  
+  responsive: 
+  [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0',
+        slidesToShow: 3,
+        variableWidth: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0',
+        slidesToShow: 1,
+        variableWidth: true
+      }
+    }
+  ]
+});
+
 });
