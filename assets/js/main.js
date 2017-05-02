@@ -101,19 +101,7 @@
 
 $(document).ready(function(){              
     window.onload=function() {location.href='#';};
-/*
-    $(".owl-carousel").owlCarousel({
-        margin: 10,
-        stagePadding: 20,
-        responsive: 
-        {
-            0:   {items:1},
-            768: {items:2},
-            970: {items:3}
-        }
-    }); 
-*/
-    
+
 $('.slick-carousel').slick({
   infinite: true,
   speed: 300,
@@ -121,9 +109,8 @@ $('.slick-carousel').slick({
   centerPadding: '0',
   variableWidth: true,
   slidesToShow: 3,
-  prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrow.png'>",
-  nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrow.png'>",
-  
+  prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrowNoRing.png'>",
+  nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrowNoRing.png'>",
   responsive: 
   [
     {
@@ -134,8 +121,8 @@ $('.slick-carousel').slick({
         slidesToShow: 3,
         variableWidth: true,
         variable_height: true,
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrow.png'>",
-        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrow.png'>"
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrowNoRing.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrowNoRing.png'>"
       }
     },
     {
@@ -146,11 +133,11 @@ $('.slick-carousel').slick({
         slidesToShow: 1,
         variableWidth: true,
         variable_height: true,
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrow.png'>",
-        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrow.png'>"
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrowNoRing.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrowNoRing.png'>"
       }
     }
   ]
-});
+  });
 
 });

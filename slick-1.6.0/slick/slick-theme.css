@@ -46,8 +46,17 @@
 .slick-next:hover,
 .slick-next:focus
 {
-opacity: .3;
+/*opacity: .3;*/
 }
+
+.slick-prev:hover {
+    content: url(/images/LeftArrowNoRingPink.png);
+}
+
+.slick-next:hover {
+    content: url(/images/RightArrowNoRingPink.png);
+}
+
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
