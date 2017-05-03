@@ -214,7 +214,7 @@
                                 </p>
                         </header>
                         </div>
-                        <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                        <div class="mapoverlay" onClick="style.pointerEvents='none'"></div>
                              <iframe 
                                   src="https://www.google.com/maps/embed/v1/place?q=The%20Market%20Place,%20Devizes%20SN10%201JD,%20UK
                                   &zoom=17.5
@@ -232,11 +232,35 @@
 								<p>If you would like more information on Larkin or would like to book us, then please use the <i>Contact Us</i> button to the right.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Contact us</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<li><a href="#popup1" id="contactbutton" class="button fit special">Contact us</a></li>
+								<li><a href="#" id="learnbutton" class="button fit">Learn More</a></li>
 							</ul>
 						</div>
 					</section>
+                
+                    <div id = "popup1" class="overlay">
+                        <div class="popup">
+                            <h2 class="major">Contact</h2>
+                            <form method="post" action="#">
+                                <div class="field half first">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" />
+                                </div>
+                                <div class="field half">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" />
+                                </div>
+                                <div class="field">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="4"></textarea>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" class="special" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
 
 				<!-- FOOTER -->
 					<footer id="footer">

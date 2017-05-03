@@ -1465,6 +1465,7 @@
 			border-bottom-color: transparent;
 		}
 
+
 	strong, b {
 		color: #fff;
 		font-weight: 600;
@@ -1667,11 +1668,11 @@
 	}
 
 	label {
-		color: #fff;
+		color: white;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
-		margin: 0 0 1em 0;
+		margin: 0 0 0em 0;
 	}
 
 	input[type="text"],
@@ -1683,9 +1684,9 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(144, 144, 144, 0.25);
-		border-radius: 3px;
-		border: none;
+		background: transparent;
+		border-radius: 4px;
+		border: solid 1px #ffffff;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2322,10 +2323,9 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			/* background-color: #ed4933; */
-            background-color: deeppink;
-			box-shadow: none !important;
-			color: #ffffff !important;
+            background-color:deeppink;
+			/* box-shadow: none !important; */
+			color: white !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2333,7 +2333,8 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #ef5e4a !important;
+				background-color: transparent!important;
+                color: black !important;
 			}
 
 			input[type="submit"].special:active,
@@ -2341,7 +2342,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #eb341c !important;
+				background-color: transparent!important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2637,7 +2638,7 @@
 		}
 
 /* Wrapper */
-.overlay {
+.mapoverlay {
 /*   -- Testing new code 
 background:transparent;
 position:relative;
@@ -3893,3 +3894,68 @@ top:500px;
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+
+
+
+
+
+/*  HOPEFULLY GET THIS WORKING  */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(27, 31, 34);
+  border-radius: 5px;
+  width: 45%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: white;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}

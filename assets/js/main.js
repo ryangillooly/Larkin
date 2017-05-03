@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function ($) {
 
 	skel
 		.breakpoints({
@@ -20,9 +20,9 @@
 		var	$window = $(window),
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
-			$banner = $('#banner'),
-			$header = $('#header');
-
+			$banner  = $('#banner'),
+			$header  = $('#header');
+        
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
@@ -139,5 +139,4 @@ $('.slick-carousel').slick({
     }
   ]
   });
-
 });
