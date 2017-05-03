@@ -17,7 +17,10 @@
 		font: inherit;
 		vertical-align: baseline;        
         text-align: -webkit-center;
-	}
+        /*
+        z-index: 10;
+        */    
+    }
 
     .contact,.inner {
         padding-bottom: 1.5em;
@@ -3479,16 +3482,15 @@ top:500px;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
-			/*
             z-index: 1;
-            */
+            
 		}
 
 			#banner h2:before, #banner h2:after {
-				-moz-transition: width 0.85s ease;
-				-webkit-transition: width 0.85s ease;
+                -moz-transition: width 0.85s ease;
+                -webkit-transition: width 0.85s ease;
 				-ms-transition: width 0.85s ease;
-				transition: width 0.85s ease;
+                transition: width 0.85s ease;
 				-moz-transition-delay: 0.25s;
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
@@ -3548,9 +3550,7 @@ top:500px;
 			text-align: center;
 			text-transform: uppercase;
 			width: 16em;
-			/*
             z-index: 1;
-		    */
         }
 
 			#banner .more:after {
@@ -3919,6 +3919,7 @@ top:500px;
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 10;
 }
 .overlay:target {
   visibility: visible;
