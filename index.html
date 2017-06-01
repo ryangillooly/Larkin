@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Larkin-Duo</title>
+		<title>Larkin</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,7 +9,10 @@
         <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>			
 	</head>
 	<body class="landing">
-            <script src="assets/js/jquery.min.js"></script>
+         
+         <!-- Load JQuery to allow initial fade effect -->
+         	<script src="assets/js/jquery.min.js"></script>
+
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
@@ -95,88 +93,7 @@
 								<h2>Videos of us</h2>
 								<p>Check out our Facebook videos below! Some are busking, recording covers...or just us being us!</p>
 							</header>
-							<!--
-                            <ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Devizes Town Centre</h3>
-                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShoutOutDevizes%2Fvideos%2F1012698502194820%2F&show_text=0&width=400" width="600" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Chasing Cars - Cover</h3>
-                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flarkinbanduk%2Fvideos%2F297374600694551%2F&show_text=0&width=400" width="600" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-								</li>
-                            </ul>
-                            -->
-                        <div class="slick-carousel">
-                          <div>        <!-- Facebook Vid down the street -->
-                              <iframe 
-                                      src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShoutOutDevizes%2Fvideos%2F1012698502194820%2F&show_text=0&width=400" 
-                                      width="400" 
-                                      height="721" 
-                                      style="border:none;overflow:hidden" 
-                                      scrolling="no" 
-                                      frameborder="0" 
-                                      allowTransparency="true" 
-                                      allowFullScreen="true">
-                              </iframe>
-                          </div>
-                          <div>        <!-- Chasing Cars -->
-                              <iframe 
-                                      width="854" 
-                                      height="480" 
-                                      src="https://www.youtube.com/embed/Exv4Y2TX1Ro" 
-                                      frameborder="0" 
-                                      allowfullscreen>
-                              </iframe>
-                          </div>
-                          <div>        <!-- Is this the way to amarillo -->
-                              <iframe
-                                      width="854" 
-                                      height="480" 
-                                      src="https://www.youtube.com/embed/FO6D9Bq7I4g" 
-                                      frameborder="0" 
-                                      allowfullscreen="true"
-                                      color="pink">
-                              </iframe>
-                          </div>
-                          <div>        <!-- Shape of you -->
-                              <iframe 
-                                      width="854" 
-                                      height="480" 
-                                      src="https://www.youtube.com/embed/dzlsUvJE19E" 
-                                      frameborder="0" 
-                                      allowfullscreen="true">
-                              </iframe>
-                          </div>
-                          <div>       <!-- Im a believer -->
-                              <iframe 
-                                      width="854" 
-                                      height="480" 
-                                      src="https://www.youtube.com/embed/q0v_V_nhaXQ" 
-                                      frameborder="0" 
-                                      allowfullscreen="true">
-                              </iframe>
-                          </div> 
-                          <div>       <!-- Rythm of the night -->
-                              <iframe 
-                                      width="854" 
-                                      height="480" 
-                                      src="https://www.youtube.com/embed/hkY7xm1IFCo" 
-                                      frameborder="0" 
-                                      allowfullscreen="true">
-                              </iframe>
-                          </div> 
-                          <div>        <!-- She Wants -->
-                              <iframe 
-                                      width="854" 
-                                      height="480" 
-                                      src="https://www.youtube.com/embed/2gubzNdATEQ" 
-                                      frameborder="0" 
-                                      allowfullscreen>
-                              </iframe>
-                          </div>
-                       </div>
-				      </div>
+						</div>
 					</section>
                 
                 <!-- CALENDAR -->
@@ -232,16 +149,17 @@
 								<p>If you would like more information on Larkin or would like to book us, then please use the <i>Contact Us</i> button to the right.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#popup1" id="contactbutton" class="button fit special">Contact us</a></li>
+								<li><a href="#contactOverlay" id="contactbutton" class="button fit special">Contact us</a></li>
+                                <li><button id="popupButton" onclick="div_show()" class="button fit special">Popup</button></li>
 								<li><a href="#" id="learnbutton" class="button fit">Learn More</a></li>
 							</ul>
 						</div>
 					</section>
                 
-                    <div id = "popup1" class="overlay">
+                    <div class="popupOverlay">
                         <div class="popup">
                             <h2 class="major">Contact</h2>
-                            <form method="post" action="#">
+                            <form method="post" action="#" name="form" id="form">
                                 <div class="field half first">
                                     <label for="name">Name</label>
                                     <input type="text" name="name" id="name" />
@@ -256,7 +174,10 @@
                                 </div>
                                 <ul class="actions">
                                     <li><input type="submit" value="Send Message" class="special" /></li>
-                                    <li><input type="reset" value="Reset" /></li>
+                                    <!--
+                                        <li><input type="button" value="Close" onclick="alert('You clicked the button!')" /></li>
+                                    -->
+                                    <li><a href="#" class="button special">Close</a></li>
                                 </ul>
                             </form>
                         </div>
@@ -275,6 +196,7 @@
 							<li>&copy; Larkin-Duo</li><li>All rights reserved</li>
 						</ul>
 					</footer>
+			
 			</div>
 
 		<!-- Scripts -->	
@@ -283,7 +205,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
             <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
 	</body>

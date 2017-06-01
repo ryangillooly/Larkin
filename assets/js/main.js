@@ -99,44 +99,13 @@
 
 })(jQuery);
 
-$(document).ready(function(){              
-    window.onload=function() {location.href='#';};
 
-$('.slick-carousel').slick({
-  infinite: true,
-  speed: 300,
-  variable_height: true,
-  centerPadding: '0',
-  variableWidth: true,
-  slidesToShow: 3,
-  prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrowNoRing.png'>",
-  nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrowNoRing.png'>",
-  responsive: 
-  [
+    function div_show() 
     {
-      breakpoint: 768,
-      settings: {
-        centerMode: true,
-        centerPadding: '0',
-        slidesToShow: 3,
-        variableWidth: true,
-        variable_height: true,
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrowNoRing.png'>",
-        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrowNoRing.png'>"
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        centerMode: true,
-        centerPadding: '0',
-        slidesToShow: 1,
-        variableWidth: true,
-        variable_height: true,
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='../../images/LeftArrowNoRing.png'>",
-        nextArrow:"<img class='a-right control-c next slick-next' src='../../images/RightArrowNoRing.png'>"
-      }
+        document.getElementById('contactPopup').style.display = "block";
     }
-  ]
-  });
-});
+    //Function to Hide Popup    
+    function div_hide()
+    {
+        document.getElementById('contactPopup').style.display = "none";
+    }

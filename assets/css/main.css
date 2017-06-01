@@ -1711,7 +1711,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px deeppink;
 		}
 
 	.select-wrapper {
@@ -1822,7 +1822,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px deeppink;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2237,7 +2237,7 @@
 /* Button */
 
 	input[type="submit"],
-	input[type="reset"],
+	input[type="close"],
 	input[type="button"],
 	button,
 	.button {
@@ -2272,7 +2272,7 @@
 	}
 
 		input[type="submit"]:hover,
-		input[type="reset"]:hover,
+		input[type="close"]:hover,
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
@@ -2280,7 +2280,7 @@
 		}
 
 		input[type="submit"]:active,
-		input[type="reset"]:active,
+		input[type="close"]:active,
 		input[type="button"]:active,
 		button:active,
 		.button:active {
@@ -2288,7 +2288,7 @@
 		}
 
 		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
+		input[type="close"].icon:before,
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
@@ -2296,7 +2296,7 @@
 		}
 
 		input[type="submit"].fit,
-		input[type="reset"].fit,
+		input[type="close"].fit,
 		input[type="button"].fit,
 		button.fit,
 		.button.fit {
@@ -2306,7 +2306,7 @@
 		}
 
 		input[type="submit"].small,
-		input[type="reset"].small,
+		input[type="close"].small,
 		input[type="button"].small,
 		button.small,
 		.button.small {
@@ -2314,7 +2314,7 @@
 		}
 
 		input[type="submit"].big,
-		input[type="reset"].big,
+		input[type="close"].big,
 		input[type="button"].big,
 		button.big,
 		.button.big {
@@ -2322,7 +2322,7 @@
 		}
 
 		input[type="submit"].special,
-		input[type="reset"].special,
+		input[type="close"].special,
 		input[type="button"].special,
 		button.special,
 		.button.special {
@@ -2332,7 +2332,7 @@
 		}
 
 			input[type="submit"].special:hover,
-			input[type="reset"].special:hover,
+			input[type="close"].special:hover,
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
@@ -2341,7 +2341,7 @@
 			}
 
 			input[type="submit"].special:active,
-			input[type="reset"].special:active,
+			input[type="close"].special:active,
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
@@ -2349,8 +2349,8 @@
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
+		input[type="close"].disabled,
+		input[type="close"]:disabled,
 		input[type="button"].disabled,
 		input[type="button"]:disabled,
 		button.disabled,
@@ -2367,7 +2367,7 @@
 		@media screen and (max-width: 736px) {
 
 			input[type="submit"],
-			input[type="reset"],
+			input[type="close"],
 			input[type="button"],
 			button,
 			.button {
@@ -2661,9 +2661,10 @@ top:500px;
 .calendar iframe {
     position: relative;
     height: 500px;
-    width: 95.1em;
+    width: 100%;
 }
 */
+
 
 	.wrapper {
 		padding: 8em 0 4em 0 ;
@@ -2704,7 +2705,7 @@ top:500px;
 
 		.wrapper.style1 {
 			/*
-            background-color: #21b2a6;
+            background-color: deeppink;
 			color: #c7ebe8;
             background-image: url(/images/pic02.jpg);
             background-size: cover;
@@ -2774,7 +2775,7 @@ top:500px;
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #21b2a6;
+				color: deeppink;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -2830,7 +2831,7 @@ top:500px;
 			}
 
 			.wrapper.style1 input[type="submit"],
-			.wrapper.style1 input[type="reset"],
+			.wrapper.style1 input[type="close"],
 			.wrapper.style1 input[type="button"],
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
@@ -2839,7 +2840,7 @@ top:500px;
 			}
 
 				.wrapper.style1 input[type="submit"]:hover,
-				.wrapper.style1 input[type="reset"]:hover,
+				.wrapper.style1 input[type="close"]:hover,
 				.wrapper.style1 input[type="button"]:hover,
 				.wrapper.style1 button:hover,
 				.wrapper.style1 .button:hover {
@@ -2848,7 +2849,7 @@ top:500px;
 				}
 
 				.wrapper.style1 input[type="submit"]:active,
-				.wrapper.style1 input[type="reset"]:active,
+				.wrapper.style1 input[type="close"]:active,
 				.wrapper.style1 input[type="button"]:active,
 				.wrapper.style1 button:active,
 				.wrapper.style1 .button:active {
@@ -2989,7 +2990,7 @@ top:500px;
 			}
 
 			.wrapper.style3 input[type="submit"],
-			.wrapper.style3 input[type="reset"],
+			.wrapper.style3 input[type="close"],
 			.wrapper.style3 input[type="button"],
 			.wrapper.style3 button,
 			.wrapper.style3 .button {
@@ -2998,7 +2999,7 @@ top:500px;
 			}
 
 				.wrapper.style3 input[type="submit"]:hover,
-				.wrapper.style3 input[type="reset"]:hover,
+				.wrapper.style3 input[type="close"]:hover,
 				.wrapper.style3 input[type="button"]:hover,
 				.wrapper.style3 button:hover,
 				.wrapper.style3 .button:hover {
@@ -3006,7 +3007,7 @@ top:500px;
 				}
 
 				.wrapper.style3 input[type="submit"]:active,
-				.wrapper.style3 input[type="reset"]:active,
+				.wrapper.style3 input[type="close"]:active,
 				.wrapper.style3 input[type="button"]:active,
 				.wrapper.style3 button:active,
 				.wrapper.style3 .button:active {
@@ -3147,7 +3148,7 @@ top:500px;
 			}
 
 			.wrapper.style5 input[type="submit"],
-			.wrapper.style5 input[type="reset"],
+			.wrapper.style5 input[type="close"],
 			.wrapper.style5 input[type="button"],
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
@@ -3156,7 +3157,7 @@ top:500px;
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
-				.wrapper.style5 input[type="reset"]:hover,
+				.wrapper.style5 input[type="close"]:hover,
 				.wrapper.style5 input[type="button"]:hover,
 				.wrapper.style5 button:hover,
 				.wrapper.style5 .button:hover {
@@ -3164,7 +3165,7 @@ top:500px;
 				}
 
 				.wrapper.style5 input[type="submit"]:active,
-				.wrapper.style5 input[type="reset"]:active,
+				.wrapper.style5 input[type="close"]:active,
 				.wrapper.style5 input[type="button"]:active,
 				.wrapper.style5 button:active,
 				.wrapper.style5 .button:active {
@@ -3229,7 +3230,7 @@ top:500px;
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: deeppink;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3902,14 +3903,14 @@ top:500px;
 		background-color: #1d242a;
 	}
 
-
+ 
 
 
 
 
 
 /*  HOPEFULLY GET THIS WORKING  */
-.overlay {
+.popupOverlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -3921,7 +3922,7 @@ top:500px;
   opacity: 0;
   z-index: 10;
 }
-.overlay:target {
+.popupOverlay:target {
   visibility: visible;
   opacity: 1;
 }

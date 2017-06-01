@@ -49,13 +49,6 @@
 /*opacity: .3;*/
 }
 
-.slick-prev:hover {
-    content: url(/images/LeftArrowNoRingPink.png);
-}
-
-.slick-next:hover {
-    content: url(/images/RightArrowNoRingPink.png);
-}
 
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -86,7 +79,8 @@
 
 .slick-prev
 {
-    right: 101%;
+    right: 95%;
+    left:  5%;
 }
 [dir='rtl'] .slick-prev
 {
@@ -104,7 +98,8 @@
 
 .slick-next
 {
-    left: 101%;
+    left: 95%;
+    right: 5%;
 }
 [dir='rtl'] .slick-next
 {
