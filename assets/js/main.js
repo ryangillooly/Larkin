@@ -94,18 +94,8 @@
 				});
 
 			}
-
+    
 	});
 
 })(jQuery);
 
-
-    function div_show() 
-    {
-        document.getElementById('contactPopup').style.display = "block";
-    }
-    //Function to Hide Popup    
-    function div_hide()
-    {
-        document.getElementById('contactPopup').style.display = "none";
-    }

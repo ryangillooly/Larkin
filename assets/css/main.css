@@ -3910,7 +3910,7 @@ top:500px;
 
 
 /*  HOPEFULLY GET THIS WORKING  */
-.popupOverlay {
+#popupForm {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -3922,12 +3922,13 @@ top:500px;
   opacity: 0;
   z-index: 10;
 }
-.popupOverlay:target {
+
+#popupForm:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
+#popup {
   margin: 70px auto;
   padding: 20px;
   background: rgb(27, 31, 34);
@@ -3937,12 +3938,12 @@ top:500px;
   transition: all 5s ease-in-out;
 }
 
-.popup h2 {
+#popup h2 {
   margin-top: 0;
   color: white;
   font-family: Tahoma, Arial, sans-serif;
 }
-.popup .close {
+#popup .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -3952,10 +3953,10 @@ top:500px;
   text-decoration: none;
   color: #ffffff;
 }
-.popup .close:hover {
+#popup .close:hover {
   color: #06D85F;
 }
-.popup .content {
+#popup .content {
   max-height: 30%;
   overflow: auto;
 }
@@ -3964,7 +3965,13 @@ top:500px;
   .box{
     width: 70%;
   }
-  .popup{
+  #popup{
     width: 70%;
   }
+}
+
+
+#closeContactBox {
+    top: 7px;
+    position: relative;
 }

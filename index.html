@@ -149,17 +149,17 @@
 								<p>If you would like more information on Larkin or would like to book us, then please use the <i>Contact Us</i> button to the right.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#contactOverlay" id="contactbutton" class="button fit special">Contact us</a></li>
-                                <li><button id="popupButton" onclick="div_show()" class="button fit special">Popup</button></li>
-								<li><a href="#" id="learnbutton" class="button fit">Learn More</a></li>
+								<li><a href="#popupForm" id="contactbutton" class="button fit special">Contact us</a></li>
+                                <li><a href="#" id="learnbutton" class="button fit">Learn More</a></li>
 							</ul>
 						</div>
-					</section>
+					</section> 
                 
-                    <div class="popupOverlay">
-                        <div class="popup">
+                    <div id="popupForm">
+                        <div id="popup">
                             <h2 class="major">Contact</h2>
-                            <form method="post" action="#" name="form" id="form">
+                    <!---------------------->
+                            <form method="post" action="mailto:ryangillooly@hotmail.co.uk" enctype="text/plain" name="form" id="form">
                                 <div class="field half first">
                                     <label for="name">Name</label>
                                     <input type="text" name="name" id="name" />
@@ -174,12 +174,10 @@
                                 </div>
                                 <ul class="actions">
                                     <li><input type="submit" value="Send Message" class="special" /></li>
-                                    <!--
-                                        <li><input type="button" value="Close" onclick="alert('You clicked the button!')" /></li>
-                                    -->
-                                    <li><a href="#" class="button special">Close</a></li>
+                                    <li><a href="#" id="closeContactBox" class="button fit special">Close</a></li>
                                 </ul>
                             </form>
+                    <!---------------------->
                         </div>
                     </div>
 
