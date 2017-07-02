@@ -197,7 +197,7 @@
 
             <!-- VIDEOS -->
             <section id="three" class="wrapper style3 special">
-                <div class="inner">
+                <div class="inner videos">
                     <header class="major"> 
                         <h2>Videos of us</h2> 
                         <p>Check out our Facebook videos below! Some are busking, recording covers...or just us being us!</p>
