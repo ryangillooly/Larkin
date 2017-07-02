@@ -3490,7 +3490,7 @@ top:500px;
 		text-align: cover;   
         background-image: url(../../images/kk3.jpg);    
         background-size: cover; 
-        background-position: center;   
+        background-position: center;    
         background-color: rgba(29, 36, 42, 0.9);    
         background-repeat: no-repeat; 
         -webkit-transition: opacity 1s ease-in-out;     
@@ -3939,7 +3939,7 @@ top:500px;
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
 		/*
-        background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+        background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg"); 
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
@@ -3947,8 +3947,8 @@ top:500px;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-        height: 100vh;
-        
+        height: 100vh;  
+         
        /* padding-top: 0; */
 	}
 
