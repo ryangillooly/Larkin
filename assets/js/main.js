@@ -21,7 +21,20 @@
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
 			$banner  = $('#banner'),
-			$header  = $('#header');
+			$header  = $('#header'),
+            $background = $('#background');
+
+          // Fix background image jump on mobile
+          if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+            $background.css({'top': 'auto', 'bottom': 0});
+
+            $window.resize(sizeBackground);
+            sizeBackground();
+          }
+
+          function sizeBackground() {
+             $background.height(screen.height);
+          }
         
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
