@@ -2563,7 +2563,7 @@
 
 		.spotlight:nth-child(2) {
 			background: rgba(29, 36, 42, 0.9);
-            height: 100vh;
+           /* height: 100vh;*/
 		}
 
 		.spotlight:nth-child(3) {
