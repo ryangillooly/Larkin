@@ -4,12 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function ($) {
 
 	skel
 		.breakpoints({
 			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
+			large:	'(max-width: 1280px)', 
 			medium:	'(max-width: 980px)',
 			small:	'(max-width: 736px)',
 			xsmall:	'(max-width: 480px)'
@@ -20,9 +20,22 @@
 		var	$window = $(window),
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
-			$banner = $('#banner'),
-			$header = $('#header');
+			$banner  = $('#banner'),
+			$header  = $('#header'),
+            $background = $('#background');
 
+          // Fix background image jump on mobile
+          if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+            $background.css({'top': 'auto', 'bottom': 0});
+
+            $window.resize(sizeBackground);
+            sizeBackground();
+          }
+
+          function sizeBackground() {
+             $background.height(screen.height);
+          }
+        
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
@@ -94,7 +107,8 @@
 				});
 
 			}
-
+    
 	});
 
 })(jQuery);
+
