@@ -107,7 +107,7 @@
                 document.getElementById("popupForm").style.visibility = "Visible";
             }
             
-            var bg = $("#bg1, #bg2");
+            var bg = $("#banner");
 
             function resizeBackground() 
             {
