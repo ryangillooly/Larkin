@@ -3644,6 +3644,7 @@ top:500px;
 				padding: 7em 3em 5em 3em ; 
 				height: 100vh;
 				min-height: 0; 
+                transition: height 999999s;
 			} 
 
 				#banner h2 {
